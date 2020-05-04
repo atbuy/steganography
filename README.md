@@ -45,7 +45,7 @@ This app let's you encode text into  an image.
    
    Encoding in small images takes a few seconds. **lena.png** is 512×512 and it takes about 1.5 seconds to encode the message. However a 4k image (3840×2160) took about 41 seconds. 
    
-   **Decoding from the image, doesn't have to do with how large the image is, but how large the encoded text is**. Although, decoding from the 4K image, did take longer that decoding from the 512×512 image.
+   **Decoding from the image, doesn't have to do with how large the image is, but how large the encoded text is**. Although, decoding from the 4K image, did take longer that decoding from the 512×512 image, probably because it takes longer for numpy to load the image as an array.
    
 ## To decode text
   1) Select the image that you know has an encoded message
