@@ -114,7 +114,7 @@ def decode_text(infile, output):
 
                     # Stop the execution if the delimiter is found
                     # Write all the characters to a variable and then write the final text in a file
-                    if delimiter == 64:
+                    if delimiter == 62:
                         text = ""
                         for binary in characters:
                             char = chr(int(binary, 2))
