@@ -4,7 +4,7 @@ This app let's you encode text into  an image.
 
 **All the files you will need to specify, require you to include their extension**
 
-# To encode text:
+## To encode text:
   1) Select the image to encode the text into
   2) Select the name of the image to output
   3) Write the text to encode inside it
@@ -43,7 +43,11 @@ This app let's you encode text into  an image.
    
    **The files you are specifying should also be in the same directory, or the program won't work. You can not specify paths!**
    
-# To decode text
+   Encoding in small images takes a few seconds. **lena.png** is 512×512 and it takes about 1.5 seconds to encode the message. However a 4k image (3840×2160) took about 41 seconds. 
+   
+   **Decoding from the image, doesn't have to do with how large the image is, but how large the encoded text is**. Although, decoding from the 4K image, did take longer that decoding from the 512×512 image.
+   
+## To decode text
   1) Select the image that you know has an encoded message
   2) Select the name of the file you want the output to be written to
   
@@ -54,6 +58,46 @@ This app let's you encode text into  an image.
   It doesn't matter how big the image is, it will take the same time to decode if the image is 4K (3840×2160) or 144p (256×144), because the execution time depends on the size of the message and not the image.
   
   The larger in bytes the encoded message is, the longer the execution time.
- 
+
+## Screenshots
+- **lena.png**:
   
+  ![lena.png](/Screenshots/lena.png)
   
+- **encoding a message into _lena.png_**:
+
+  ![encoding](/Screenshots/Encoding1.png)
+  
+- **output.png**:
+
+  ![output.png](/Screenshots/output.png)
+  
+- **decoding the message from _output.png_**:
+
+  ![decoding](/Screenshots/Decoding1.png)
+  
+- **output_text.txt**:
+
+  ![output_text.txt](/Screenshots/output_text.png)
+  
+
+
+- **4k1.jpg**:
+
+  ![4k1.jpg](/Screenshots/4k1.jpg)
+  
+- **encoding the same message into the _4k1.jpg_ image**:
+
+  ![4k encoding](/Screenshots/4kEncoding1.png)
+
+- **4koutput.png**:
+
+  ![4koutput.png](/Screenshots/4koutput.png)
+  
+- **decoding the message from _4koutput.png_**:
+
+  ![4k decoding](/Screenshots/4kDecoding1.png)
+  
+- **4koutput_text.txt**:
+
+  ![4koutput_text.txt](/Screenshots/4koutput_text.png)
