@@ -53,7 +53,7 @@ def encode_text(infile, outfile, message):
                         temp.append(item)
                     else:
                         # Change the last bit of the byte to the next bit of the message
-                        to_append = bin_val[:-1] + f"{write[count]}" + bin_val[:0]
+                        to_append = bin_val[:-1] + f"{write[count]}"
                         to_append = int(to_append, 2)
                         temp.append(to_append)
                     count += 1
